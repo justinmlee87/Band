@@ -3,7 +3,7 @@
 /* Reset default margin and padding */
 
 :root {
-    --primary-color: #800020; /* Main green color */
+    --primary-color: #0A5C36; /* Main green color */
     --dark-color: #333; /* Dark background color */
     --light-color: #fff; /* Light text color */
     --accent-color: #800020; /* Accent color for contrast */
@@ -40,44 +40,80 @@ header {
 .band-image {
     position: relative;
     overflow: hidden; /* Ensure the image does not overflow */
+    margin-top: -20px;
 }
 
 .band-image img {
     width: 100%; /* Make band image fill container */
     max-width: 100%;
     height: auto;
-    border-radius: 50%;
+    /* Remove border-radius to eliminate oval view */
+    margin-bottom: 15px;
+}
+
+.band-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none; /* Ensure the gradient doesn't interfere with hover actions */
+}
+
+.band-name {
+    position: absolute;
+    top: 20px; /* Position at the top of the band-image container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 50px; /* Adjust font size */
+    color: var(--light-color); /* Set light text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow for better contrast */
+    background-color: rgba(80, 200, 120, 0.7); /* Semi-transparent background */
+    padding: 10px 20px; /* Add padding around the band name */
+    border-radius: 8px; /* Rounded corners for the band name */
+    z-index: 1; /* Ensure band name appears above the band image */
+}
+
+.social-icons-container {
+    position: absolute;
+    bottom: 10px; /* Adjust bottom position */
+    right: 20px; /* Adjust right position */
+    transform: translate(-50%, 0); /* Center horizontally */
 }
 
 .social-icons {
     list-style-type: none;
-    margin-top: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .social-icons li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 5px; /* Adjust margin between icons */
+    border: 2px solid var(--light-color); /* Add border around each icon */
+    border-radius: 50%; /* Make border round for circular effect */
+    overflow: hidden;
 }
 
 .social-icons img {
-    width: 30px; /* Adjust size as needed */
-    vertical-align: middle;
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: block;
+    transition: transform 0.3s ease; /* Add smooth transition */
 }
 
+.social-icons li:hover img {
+    transform: scale(1.1); /* Scale up icon on hover */
+}
 /* Style past performances section */
 #past-performances {
     padding: 20px;
     text-align: center; /* Center align text in past performances section */
 }
 
-.section-title-box {
-    background-color: var(--primary-color); /* Use primary color for section title box */
-    color: var(--light-color); /* Set light text color */
-    display: inline-block; /* Ensure the box size adjusts to its content */
-    padding: 5px 20px; /* Add padding inside the box */
-    border-radius: 8px; /* Add border radius for rounded corners */
-    
-}
+
 
 .section-title {
     margin-bottom: 20px;
@@ -90,7 +126,7 @@ header {
 
 .performance-box {
     background-color: #800020;
-    border-radius: 8px;
+
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
     width: 60%; /* Adjust width of performance box */
@@ -101,8 +137,7 @@ header {
     width: 100%; /* Make performance image fill its container */
     max-width: 100%;
     height: auto;
-    border-top-left-radius: 8px; /* Adjust border radius as needed */
-    border-top-right-radius: 8px; /* Adjust border radius as needed */
+    margin-bottom: -10px;
 }
 
 .performance-details {
@@ -116,15 +151,28 @@ header {
     text-align: center; /* Center align text in videos section */
 }
 
+#videos h2 {
+    margin-bottom: 40px; /* Add space between heading and videos */
+}
+
 .video {
     margin-bottom: 20px;
 }
+
 
 .video iframe {
     width: 70vw; /* Make videos span the full width of the viewport */
     height: 40vw; /* Maintain 16:9 aspect ratio (9/16 * 100 = 56.25) */
     max-width: 100%; /* Ensure videos do not exceed the viewport width */
     max-height: calc(100vw * 0.5625); /* Maintain aspect ratio with maximum height */
+}
+
+/* Add border or horizontal rule between sections */
+.section-divider {
+    width: 80%;
+    border-top: 3px solid var(--primary-color); /* Solid border line with primary color */
+    margin: 20px 0; /* Adjust margin as needed */
+    
 }
 
 /* Style footer */
