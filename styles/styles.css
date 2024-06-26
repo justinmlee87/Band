@@ -6,7 +6,7 @@
     --primary-color: #800020; /* Main green color */
     --dark-color: #333; /* Dark background color */
     --light-color: #fff; /* Light text color */
-    --accent-color: #FF6F61; /* Accent color for contrast */
+    --accent-color: #800020; /* Accent color for contrast */
 }
 
 * {
@@ -70,15 +70,44 @@ header {
     text-align: center; /* Center align text in past performances section */
 }
 
-.performance {
+.section-title-box {
+    background-color: var(--primary-color); /* Use primary color for section title box */
+    color: var(--light-color); /* Set light text color */
+    display: inline-block; /* Ensure the box size adjusts to its content */
+    padding: 5px 20px; /* Add padding inside the box */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    
+}
+
+.section-title {
     margin-bottom: 20px;
 }
 
-.performance img {
-    width: 100%; /* Make images fill container */
+.performance {
+    display: flex;
+    justify-content: center;
+}
+
+.performance-box {
+    background-color: #800020;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    width: 60%; /* Adjust width of performance box */
+    margin-bottom: 20px; /* Add space between performance boxes */
+}
+
+.performance-box img {
+    width: 100%; /* Make performance image fill its container */
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-top-left-radius: 8px; /* Adjust border radius as needed */
+    border-top-right-radius: 8px; /* Adjust border radius as needed */
+}
+
+.performance-details {
+    padding: 10px;
+    text-align: center; /* Center align text in performance details */
 }
 
 /* Style videos section */
@@ -114,4 +143,19 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .band-name {
+        font-size: 20px; /* Decrease font size for band name on smaller screens */
+    }
+
+    .social-icons img {
+        width: 25px; /* Decrease size of social icons on smaller screens */
+    }
+
+    .performance img {
+        border-radius: 4px; /* Adjust image border radius on smaller screens */
+    }
 }
