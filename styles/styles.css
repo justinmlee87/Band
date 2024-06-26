@@ -1,0 +1,117 @@
+/* Basic styles for the band website */
+
+/* Reset default margin and padding */
+
+:root {
+    --primary-color: #800020; /* Main green color */
+    --dark-color: #333; /* Dark background color */
+    --light-color: #fff; /* Light text color */
+    --accent-color: #FF6F61; /* Accent color for contrast */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center all elements in the body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    font-family: Arial, sans-serif; /* Example font */
+    background-color: var(--dark-color); /* Set dark background */
+    color: var(--light-color); /* Set light text color */
+}
+
+/* Style header */
+header {
+    background-color: var(--primary-color); /* Use primary color for header */
+    color: var(--light-color); /* Set light text color */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.band-image {
+    position: relative;
+    overflow: hidden; /* Ensure the image does not overflow */
+}
+
+.band-image img {
+    width: 100%; /* Make band image fill container */
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.social-icons {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust size as needed */
+    vertical-align: middle;
+}
+
+/* Style past performances section */
+#past-performances {
+    padding: 20px;
+    text-align: center; /* Center align text in past performances section */
+}
+
+.performance {
+    margin-bottom: 20px;
+}
+
+.performance img {
+    width: 100%; /* Make images fill container */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style videos section */
+#videos {
+    padding: 20px;
+    text-align: center; /* Center align text in videos section */
+}
+
+.video {
+    margin-bottom: 20px;
+}
+
+.video iframe {
+    width: 70vw; /* Make videos span the full width of the viewport */
+    height: 40vw; /* Maintain 16:9 aspect ratio (9/16 * 100 = 56.25) */
+    max-width: 100%; /* Ensure videos do not exceed the viewport width */
+    max-height: calc(100vw * 0.5625); /* Maintain aspect ratio with maximum height */
+}
+
+/* Style footer */
+footer {
+    background-color: var(--primary-color); /* Use primary color for footer */
+    color: var(--light-color); /* Set light text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
