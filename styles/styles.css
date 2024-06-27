@@ -127,7 +127,7 @@ header {
 .about-us-content {
     max-width: 800px; /* Adjust max width of content */
     margin: 0 auto; /* Center align content */
-    margin-bottom: -20px;
+    margin-bottom: 20px;
     background-color: #0A5C36; /* Background color for content */
     padding: 20px; /* Padding inside the content box */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
