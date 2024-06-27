@@ -119,13 +119,28 @@ header {
     margin-bottom: 20px;
 }
 
+#about-us {
+    padding: 20px;
+    text-align: center; /* Center align text in about us section */
+}
+
+.about-us-content {
+    max-width: 800px; /* Adjust max width of content */
+    margin: 0 auto; /* Center align content */
+    margin-bottom: -20px;
+    background-color: #0A5C36; /* Background color for content */
+    padding: 20px; /* Padding inside the content box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+
 .performance {
     display: flex;
     justify-content: center;
 }
 
 .performance-box {
-    background-color: #800020;
+    background-color: #0A5C36;
 
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
@@ -152,11 +167,11 @@ header {
 }
 
 #videos h2 {
-    margin-bottom: 40px; /* Add space between heading and videos */
+    margin-bottom: 30px; /* Add space between heading and videos */
 }
 
 .video {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -171,7 +186,9 @@ header {
 .section-divider {
     width: 80%;
     border-top: 3px solid var(--primary-color); /* Solid border line with primary color */
-    margin: 20px 0; /* Adjust margin as needed */
+    margin: 10px auto; /* Adjust margin as needed */
+    margin-top: -10px;
+    
     
 }
 
@@ -205,5 +222,14 @@ footer p {
 
     .performance img {
         border-radius: 4px; /* Adjust image border radius on smaller screens */
+    }
+
+    .social-icons li {
+        margin: 0 10px; /* Adjust margin between icons */
+    }
+
+    .social-icons img {
+        width: 30px; /* Reduce icon size */
+        height: 30px;
     }
 }
