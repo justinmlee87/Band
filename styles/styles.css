@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
     justify-content: center;
     min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
     font-family: Arial, sans-serif; /* Example font */
