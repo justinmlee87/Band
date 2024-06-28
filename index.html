@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="band-image">
-            <img src="images/merge.png.jpg" alt="Band Image">
+            <img src="images/logo.png" alt="Band Image">
         </div>
         <nav>
             <ul class="social-icons">
@@ -50,7 +50,7 @@
                     <p>Location: 45 E Par St. Orlando, FL 32804</p>
                 </div>
                 <img src="images/band1.png.jpg" alt="Performance 1">
-                <img src="images/band2.png.jpg" alt="Performance 1">
+                
             </div>
         </div>
         
@@ -65,13 +65,36 @@
         <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen title="Video 1"></iframe>
         </div>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen title="Video 2"></iframe>
-        </div>
         <!-- Add more videos as needed -->
     </section>
 
+    <hr class="section-divider">
+
+    <section id="contact-us">
+        <div class="section-title-box">
+            <h2 class="section-title">Contact Us</h2>
+        </div>
+        <form action="mailto:justinmlee87@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+
 </main>
+
 
     <footer>
         <p>&copy; 2024 | Merge | All Rights Reserved</p>

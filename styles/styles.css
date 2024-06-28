@@ -192,6 +192,66 @@ header {
     
 }
 
+main {
+    width: 100vw; /* Set width to 70% of viewport width */
+    text-align: center;
+    max-width: 1200px; /* Limit maximum width */
+    margin: 20px auto; /* Center align and add margin */
+    padding: 20px;
+    background-color: #333; /* White background for form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 50%;
+    padding: 8px; /* Reduce padding for input fields */
+    font-size: 14px; /* Reduce font size for input fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+button {
+    background-color: #0A5C36; /* Primary color for button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #309360; /* Darker shade of primary color on hover */
+}
+
+.band-logo {
+    text-align: center;
+    margin-top: 20px; /* Adjust top margin */
+    margin-bottom: 20px; /* Adjust bottom margin */
+}
+
+.footer-image {
+    max-width: 100%; /* Ensure band image adjusts to container width */
+}
+
 /* Style footer */
 footer {
     background-color: var(--primary-color); /* Use primary color for footer */
@@ -231,5 +291,13 @@ footer p {
     .social-icons img {
         width: 30px; /* Reduce icon size */
         height: 30px;
+    }
+
+    main {
+        width: 90vw; /* Adjust width for smaller screens */
+    }
+
+    .footer-image {
+        max-width: 80%; /* Adjust image width for smaller screens */
     }
 }
