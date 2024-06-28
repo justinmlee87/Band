@@ -144,7 +144,7 @@ header {
 
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-    width: 60%; /* Adjust width of performance box */
+    width: 70%; /* Adjust width of performance box */
     margin-bottom: 20px; /* Add space between performance boxes */
 }
 
@@ -203,6 +203,15 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+form {
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    background-color: #0A5C36;
+    padding: 30px; /* Increase padding for larger form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .form-group {
     margin-bottom: 15px;
     
@@ -229,7 +238,7 @@ textarea {
 }
 
 button {
-    background-color: #0A5C36; /* Primary color for button */
+    background-color: #800020; /* Primary color for button */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -239,7 +248,8 @@ button {
 }
 
 button:hover {
-    background-color: #309360; /* Darker shade of primary color on hover */
+    background-color: pink; /* Darker shade of primary color on hover */
+    color: black;
 }
 
 .band-logo {
@@ -297,7 +307,21 @@ footer p {
         width: 90vw; /* Adjust width for smaller screens */
     }
 
-    .footer-image {
-        max-width: 80%; /* Adjust image width for smaller screens */
+    form {
+        padding: 20px; /* Adjust padding for form on smaller screens */
     }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 10px; /* Reduce padding for input fields on smaller screens */
+        font-size: 14px; /* Reduce font size for input fields on smaller screens */
+    }
+
+    button {
+        padding: 10px 20px; /* Adjust button padding for smaller screens */
+        display: block; /* Display button as block for full width on smaller screens */
+        margin: 20px auto 0; /* Center align button with top margin on smaller screens */
+    }
+
 }
