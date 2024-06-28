@@ -216,7 +216,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 50%;
+    width: 100%;
     padding: 8px; /* Reduce padding for input fields */
     font-size: 14px; /* Reduce font size for input fields */
     border: 1px solid #ccc;
