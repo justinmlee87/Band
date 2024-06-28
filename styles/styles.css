@@ -125,12 +125,22 @@ header {
 }
 
 .about-us-content {
-    max-width: 800px; /* Adjust max width of content */
+    max-width: 950px; /* Adjust max width of content */
     margin: 0 auto; /* Center align content */
     margin-bottom: 20px;
     background-color: #0A5C36; /* Background color for content */
     padding: 20px; /* Padding inside the content box */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.merge {
+    margin-top: 20px; /* Adjust margin top for band image */
+    text-align: center; /* Center align band image */
+}
+
+.merge img {
+    max-width: 950px; /* Ensure band image adjusts to container width */
+    height: auto; /* Ensures image maintains aspect ratio */
 }
 
 
@@ -144,7 +154,7 @@ header {
 
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-    width: 70%; /* Adjust width of performance box */
+    width: 85%; /* Adjust width of performance box */
     margin-bottom: 20px; /* Add space between performance boxes */
 }
 
@@ -208,7 +218,6 @@ form {
     margin: 0 auto;
     background-color: #0A5C36;
     padding: 30px; /* Increase padding for larger form */
-    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -229,7 +238,6 @@ textarea {
     padding: 8px; /* Reduce padding for input fields */
     font-size: 14px; /* Reduce font size for input fields */
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
 }
 
@@ -290,9 +298,7 @@ footer p {
         width: 25px; /* Decrease size of social icons on smaller screens */
     }
 
-    .performance img {
-        border-radius: 4px; /* Adjust image border radius on smaller screens */
-    }
+
 
     .social-icons li {
         margin: 0 10px; /* Adjust margin between icons */
@@ -304,7 +310,7 @@ footer p {
     }
 
     main {
-        width: 90vw; /* Adjust width for smaller screens */
+        width: 100vw; /* Adjust width for smaller screens */
     }
 
     form {
@@ -324,4 +330,14 @@ footer p {
         margin: 20px auto 0; /* Center align button with top margin on smaller screens */
     }
 
+    .merge {
+        margin-top: 10px; /* Reduce top margin for band image on smaller screens */
+    }
+
+    .merge img {
+        max-width: 100%; /* Ensure band image adjusts to container width */
+        height: auto; /* Ensures image maintains aspect ratio */
+    }
 }
+
+
